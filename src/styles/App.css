@@ -1,0 +1,87 @@
+/* Basic CSS Reset */
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --background-header: rgba(255, 255, 255, 0.95);
+    --background-body: #f3f5f8;
+    --background-footer: #212121;
+    --light-color: #f8fafc;
+    --dark-color: #1e293b;
+    --gray-color: #94a3b8;
+    --transition-speed: 0.3s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+header {
+    background-color: var(--background-header);
+}
+footer {
+    color: white;
+    background-color: var(--dark-color);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.portfolio-logo {
+    color: var(--secondary-color);
+}
+
+/* Section */
+.section {
+    margin-bottom: 5rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
