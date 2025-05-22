@@ -5,10 +5,10 @@ function handleFormSubmit(event) {
 
     emailjs
         .sendForm(
-            "TON_SERVICE_ID",
-            "TON_TEMPLATE_ID",
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
             event.target,
-            "TA_CLE_PUBLIQUE"
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(
             (result) => {
