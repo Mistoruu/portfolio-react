@@ -22,3 +22,5 @@ function handleFormSubmit(event) {
             }
         );
 }
+
+export default handleFormSubmit;
