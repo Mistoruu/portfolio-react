@@ -16,13 +16,19 @@ function footer() {
                             individuals.
                         </p>
                         <div class="footer-social">
-                            <a href="#" class="footer-social-icon">
+                            <a
+                                href="https://github.com/Mistoruu"
+                                class="footer-social-icon"
+                            >
                                 <img
                                     src="/assets/ico-github.png"
                                     alt="GitHub"
                                 />
                             </a>
-                            <a href="#" class="footer-social-icon">
+                            <a
+                                href="https://www.linkedin.com/in/eliott-maille/"
+                                class="footer-social-icon"
+                            >
                                 <img
                                     src="/assets/ico-linkedin.png"
                                     alt="LinkedIn"
