@@ -12,6 +12,8 @@ function Home() {
             <section id="section-presentation" className="section">
                 <div className="container">
                     <div className="presentation-content">
+                        <div id="radius-shape-1"></div>
+                        <div id="radius-shape-2"></div>
                         <div className="presentation-text">
                             <h1 className="presentation-title">
                                 Eliott Maille <br />
