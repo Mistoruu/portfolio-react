@@ -6,9 +6,17 @@ function PortfolioList() {
             <ul className="portfolio-list">
                 <ProjectCard
                     project={{
-                        title: "Projet 1",
+                        title: "BTS E6",
                         description: "E-commerce",
                         image: "/assets/projet-ecommerce-img1.PNG",
+                        link: "#",
+                    }}
+                />
+                <ProjectCard
+                    project={{
+                        title: "Dokkan Automation",
+                        description: "Automatisation de tâches avec Python",
+                        image: "/assets/project-python.jpg",
                         link: "#",
                     }}
                 />
