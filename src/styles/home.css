@@ -1,3 +1,100 @@
+/* section backgrounds */
+
+#section-about,
+#section-contact {
+    background-color: #f1f5f9;
+}
+
+/* Presentation section */
+#section-presentation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+.presentation-title span {
+    color: var(--primary-color);
+}
+
+.presentation-description {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+}
+
+.presentation-button a {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.presentation-button a:hover {
+    background-color: var(--secondary-color);
+}
+/* About section */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.about-content .about-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.about-skills .skill {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.about-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.about-button a {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.about-button a:hover {
+    background-color: var(--secondary-color);
+}
+/* Contact section */
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,16 +116,21 @@
     width: 24px;
     height: 24px;
 }
-
-.contact-text p {
+.contact-info-idea {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.contact-info p {
     color: var(--gray-color);
+    margin-bottom: 2rem;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: var(--light-gray-color);
+    background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -38,11 +140,12 @@
 .contact-form textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid var(--light-gray-color);
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
     font-size: 1rem;
     color: var(--dark-gray-color);
     margin-bottom: 15px;
+    resize: vertical;
 }
 
 .contact-form input:focus,
@@ -69,4 +172,25 @@
 
 .form-group {
     border-radius: 5px;
+}
+#radius-shape-1 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    height: 180px;
+    width: 180px;
+    top: 20px;
+    left: 20px;
+    background: radial-gradient(#3ba5dc, #2e8b57);
+    overflow: hidden;
+    position: absolute;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: 20px;
+    right: 20px;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(#2e8b57, #3ba5dc);
+    overflow: hidden;
+    position: absolute;
 }
